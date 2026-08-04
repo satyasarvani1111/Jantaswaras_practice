@@ -58,7 +58,13 @@ const lessons = {
 };
 // # is a special character in a web address. Encode sharp Shrutis so, for
 // example, D#_scale.mp3 is requested correctly as D%23_scale.mp3.
-const tanpuraFiles = Object.fromEntries(["C","C#","D","D#","E","F","F#","G","G#","A","A#","B"].map((note) => [note, `tanpura/${encodeURIComponent(note)}_scale.mp3`]));
+const tanpuraFiles = Object.fromEntries(
+  ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+    .map((note) => [
+      note,
+      `tanpura/${encodeURIComponent(note)}_scale.mp3`
+    ])
+);
 
 let currentLesson = 1, currentSpeed = 1, swaraBlocks = [], currentSwara = -1, currentBeat = -1;
 let tanpuraPlaying = false, animationFrame = null;
