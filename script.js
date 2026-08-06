@@ -1,6 +1,6 @@
 "use strict";
 
-/* Music Pandit — Janta Swaras Practice
+/* All The Best — Janta Swaras Practice
    Lesson and Tanpura players are intentionally independent. */
 
 const $ = (id) => document.getElementById(id);
